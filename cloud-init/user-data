@@ -1,0 +1,11 @@
+hostname: manual-vm
+users:
+  - name: user
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    shell: /bin/bash
+    groups: sudo
+    lock_passwd: false
+    plain_text_passwd: password
+    ssh_authorized_keys:
+      - ssh-ed25519 СВОЙ_КЛЮЧ
+ssh_pwauth: true
